@@ -1,0 +1,36 @@
+no-permission: "§cYou do not have the permissions to execute this command. ({0})"
+
+#|----------|
+#     BAN
+#|----------|
+ban-help: "§7§l| §c/ban [Spieler] [Grund] §7| Bannt den Spieler\n§7§l| §c/ban [IP] [Grund] §7| Bannt die IP für den Grund\n§7§l| §c/ban [Spieler] [Dauer] [Grund] §7| Bannt den Spieler für die angegebene Zeit\n§8(Dauer: s, m, h, d, M, y)\n§7§l| §c/ban [IP] [Dauer] [Grund] §7| Bannt die IP für die angegebene Zeit\n§7§l| §c/check [Spieler/IP/Bann] §7| Informationen über den Spieler/Bann oder die IP\n§7§l| §c/unban [Spieler/IP] §7| Entbannt die IP oder den Spieler"
+ban-help-console: "| /ban [Spieler] [Grund] | Bannt den Spieler\n| /ban [IP] [Grund] | Bannt die IP für den Grund\n| /ban [Spieler] [Dauer] [Grund] | Bannt den Spieler für die angegebene Zeit\n(Dauer: s, m, h, d, M, y)\n| /ban [IP] [Dauer] [Grund] | Bannt die IP für die angegebene Zeit\n| /check [Spieler/IP/Bann] | Informationen über den Spieler/Bann oder die IP\n| /unban [Spieler/IP] | Entbannt die IP oder den Spieler"
+ban-message: "§cDu wurdest gebannt."
+ban-not-found: "§7Es wurde kein Eintrag zur angegebenen IP-Adresse oder zum Spieler gefunden."
+ban-unit-missing: "§7Bitte gib eine Einheit zur Dauer des Banns an."
+ban-unit-error: "§7Die angegebene Einheit existiert nicht! (Einheiten: s, m, h, d, M, y)"
+ban-already-banned: "§c{0} §7ist bereits gebannt."
+ban-already-ip-banned: "§7Die IP §c{0} §7von §c{1} §7ist bereits gebannt."
+ban-duration-format: "§7Für die Dauer ist eine Zahl + die Einheit notwendig. (Einheiten: s, m, h, d, M, y)"
+ban-console-message: "{0} wurde erfolgreich gebannt."
+ban-notify: "§c{0} §7wurde von §c{1} §7gebannt.\n§7» §cGrund: §7{2}\n§7» §cGebannt: §7{3}\n§7» §cTyp: §7{4}\n§7» §cDauer: §7{5}\n§7» §cID: §7{6}"
+ban-kick-message: "§7|----------| §cEvergreen §7|----------|\n\n§cDu wurdest §epermanent §cvon unserem Netzwerk gebannt.\n\n§c» Grund: §e{0}\n§c» Bann-ID: §e{1}\n\n§cFalls du denkst, dass du zu unrecht gebannt wurdest, melde dich bitte in unserem §eForum §cunter §eforum.evergreenmc.net§c.\n§7|--------------------|"
+ban-kick-message-temp: "§7|----------| §cEvergreen §7|----------|\n\n§cDu wurdest §etemporär §cvon unserem Netzwerk gebannt.\n\n§c» Dauer: §e{2}\n§c» Grund: §e{0}\n§c» Bann-ID: §e{1}\n\n§cFalls du denkst, dass du zu unrecht gebannt wurdest, melde dich bitte in unserem §eForum §cunter §eforum.evergreenmc.net§c.\n§7|--------------------|"
+ban-new-ip: "§7Die IP §c{0} §7versuchte mit einer anderen IP §8({1}) §7den Server zu betreten. IP wurde gebannt! §8(ID: {3})"
+ban-expired: "§7Der temporäre Bann von §c{0} §7ist beendet."
+
+#|----------|
+#    CHECK
+#|----------|
+
+check-player-info: "§7|-----| §c{0} §7|-----|\n§c» UUID: §7{1}\n§c» IP: §7{2}\n§c» Rang: {3}\n§c» Letzter Beitritt: §7{4}\n"
+check-no-ban: "§c» Bann: §7Kein aktiver Bann"
+check-ban-info: "§c» Bann: §7{0}\n§c» ID: §7{1}\n§c» Seit: §7{2}\n§c» Dauer: §7{3}\n§c» Von: §7{4}\n§c» Grund: §7{5}"
+check-ip-info: "§7|-----| §c{0} §7|-----|\n§c» Spieler: §7{1}\n"
+check-not-found: "§7Es wurde kein Bann/Spieler und keine IP für den angegebenen Parameter gefunden."
+check-ban-info-id: "§7|-----| §c{0} §7|-----|\n§c» Aktiv: {1}\n§c» Gebannt: §7{2}\n§c» Typ: §7{3}\n§c» Seit: §7{4}\n§c» Dauer: §7{5}\n§c» Von: §7{6}\n§c» Grund: §7{7}"
+
+#|----------|
+#   UNBAN
+#|----------|
+unban-notify: "§c{0} §7wurde von §c{1} §7entbannt.\n§7» §cID: §7{2}"

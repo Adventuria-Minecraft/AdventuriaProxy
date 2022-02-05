@@ -1,0 +1,38 @@
+name: AdventuriaProxy
+version: '${project.version}'
+main: de.thedodo24.adventuria.adventuriaproxy.AdventuriaProxy
+author: TheDodo24
+depend: [LuckPerms]
+
+commands:
+  ban:
+    description: "Ban command. Type '/ban help' for help"
+  check:
+    description: "Player information. '/check [Name/IP]'"
+    permission: evergreenproxy.check
+  unban:
+    description: "Unban command. '/unban [Name/IP] <true>'"
+    permission: evergreenproxy.unban
+
+permissions:
+  evergreenproxy.ban.admin:
+    children:
+      evergreenproxy.ban.perm: true
+      evergreenproxy.ban.temp: true
+      evergreenproxy.check: true
+      evergreenproxy.unban: true
+      evergreenproxy.ban.notify: true
+  evergreenproxy.ban.perm:
+    children:
+      evergreenproxy.ban.notify: true
+  evergreenproxy.ban.temp:
+    children:
+      evergreenproxy.ban.notify: true
+  evergreenproxy.check:
+    children:
+      evergreenproxy.ban.notify: true
+  evergreenproxy.unban:
+    children:
+      evergreenproxy.ban.notify: true
+  evergreenproxy.ban.notify:
+
