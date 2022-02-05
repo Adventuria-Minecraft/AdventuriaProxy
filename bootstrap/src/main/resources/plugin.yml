@@ -13,6 +13,8 @@ commands:
   unban:
     description: "Unban command. '/unban [Name/IP] <true>'"
     permission: evergreenproxy.unban
+  list:
+    description: "Player list"
 
 permissions:
   evergreenproxy.ban.admin:

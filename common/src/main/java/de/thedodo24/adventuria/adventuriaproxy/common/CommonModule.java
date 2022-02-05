@@ -1,5 +1,6 @@
 package de.thedodo24.adventuria.adventuriaproxy.common;
 
+import de.thedodo24.adventuria.adventuriaproxy.common.commands.ListCommand;
 import de.thedodo24.adventuria.adventuriaproxy.common.listener.PlayerListener;
 import de.thedodo24.adventuria.adventuriaproxy.common.module.Module;
 import de.thedodo24.adventuria.adventuriaproxy.common.module.ModuleManager;
@@ -50,5 +51,6 @@ public class CommonModule extends Module {
         consoleUser = getManager().getUserManager().getOrGenerate(consoleUUID, User::new);
         consoleUser.setName("CONSOLE");
         registerListener(new PlayerListener());
+        registerCommand(new ListCommand("list"));
     }
 }

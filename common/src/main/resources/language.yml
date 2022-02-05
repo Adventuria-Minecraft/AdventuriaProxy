@@ -34,3 +34,8 @@ check-ban-info-id: "§7|-----| §c{0} §7|-----|\n§c» Aktiv: {1}\n§c» Gebann
 #   UNBAN
 #|----------|
 unban-notify: "§c{0} §7wurde von §c{1} §7entbannt.\n§7» §cID: §7{2}"
+
+#|----------|
+#   LIST
+#|----------|
+player-online: "§7|-----| §6{0} Spieler online §7|-----|"
